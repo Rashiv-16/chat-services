@@ -1,0 +1,1242 @@
+{
+	"info": {
+		"_postman_id": "1895568b-2d32-4d5f-ae97-233745fd72c3",
+		"name": "Chat Services",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "test",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/admin",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"admin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1YTQzOTkxMWNmMmFiZGJlYzg4OGEyOCIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTcwNTI5MTk2OSwiZXhwIjoxNzA1Mjk1NTY5fQ.y1FQdbCNDSlESdzBHKgk4yIyEVncPHGN-62vSJLWMfQ",
+						"type": "default",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"abzthegamer\",\r\n    \"password\": \"password123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/login",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "admin",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1YTQzOTkxMWNmMmFiZGJlYzg4OGEyOCIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTcwNTI5MTk2OSwiZXhwIjoxNzA1Mjk1NTY5fQ.y1FQdbCNDSlESdzBHKgk4yIyEVncPHGN-62vSJLWMfQ",
+								"type": "default",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"abzthegamer\",\r\n    \"password\": \"password123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/login",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "203"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"cb-MWLnzVQLpAKEKPPnZx9PvlDDIuY\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 15 Jan 2024 04:13:15 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1YTQzOTkxMWNmMmFiZGJlYzg4OGEyOCIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTcwNTI5MTk5NSwiZXhwIjoxNzA1Mjk1NTk1fQ.W5fD4NFitfuu1eFVokmL0xV937zSGNrFbLjQ8cv9iPs\"\n}"
+				},
+				{
+					"name": "normal",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1YTQzOTkxMWNmMmFiZGJlYzg4OGEyOCIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTcwNTI5MTk2OSwiZXhwIjoxNzA1Mjk1NTY5fQ.y1FQdbCNDSlESdzBHKgk4yIyEVncPHGN-62vSJLWMfQ",
+								"type": "default",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"abzthegamer1\",\r\n    \"password\": \"password123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/login",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "204"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"cc-i3V2f0jcT+rHJtUmY5yVrATqBY0\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 15 Jan 2024 04:23:25 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1YTRiMjc1YzkxOWY3MjM4Yjc4OGZmOCIsInJvbGUiOiJub3JtYWwiLCJpYXQiOjE3MDUyOTI2MDUsImV4cCI6MTcwNTI5NjIwNX0.Nvlid_o60IRqAsGOngFIjU60g6FSuLNiICM-w4nPW8E\"\n}"
+				}
+			]
+		},
+		{
+			"name": "create-user",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1YTQzOTkxMWNmMmFiZGJlYzg4OGEyOCIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTcwNTI5MTk2OSwiZXhwIjoxNzA1Mjk1NTY5fQ.y1FQdbCNDSlESdzBHKgk4yIyEVncPHGN-62vSJLWMfQ",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"abzthegamer11\",\r\n    \"password\": \"password123\",\r\n    \"role\": \"normal\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/admin/user",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"admin",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "edit-user",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1YTQzOTkxMWNmMmFiZGJlYzg4OGEyOCIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTcwNTI5MTk2OSwiZXhwIjoxNzA1Mjk1NTY5fQ.y1FQdbCNDSlESdzBHKgk4yIyEVncPHGN-62vSJLWMfQ",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"abzthegamer123\",\r\n    \"password\": \"password123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/admin/user/65a4b4192ccc24ce8872bacd",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"admin",
+						"user",
+						"65a4b4192ccc24ce8872bacd"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "edit-user",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1YTQzOTkxMWNmMmFiZGJlYzg4OGEyOCIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTcwNTI5MTk2OSwiZXhwIjoxNzA1Mjk1NTY5fQ.y1FQdbCNDSlESdzBHKgk4yIyEVncPHGN-62vSJLWMfQ",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"abzthegamer123\",\r\n    \"password\": \"password123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/admin/user/65a4b4192ccc24ce8872bacd",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"admin",
+								"user",
+								"65a4b4192ccc24ce8872bacd"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "111"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"6f-Wclibl1jU8J1UaA39/8x+EMLcMk\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 15 Jan 2024 04:30:41 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"_id\": \"65a4b4192ccc24ce8872bacd\",\n    \"username\": \"abzthegamer123\",\n    \"password\": \"password123\",\n    \"role\": \"normal\",\n    \"__v\": 0\n}"
+				}
+			]
+		},
+		{
+			"name": "get-all-users",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1YTQzOTkxMWNmMmFiZGJlYzg4OGEyOCIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTcwNTI5ODE2NiwiZXhwIjoxNzA1MzAxNzY2fQ.5YUSSyQurk0FKprc2V1m8Eub3rZkbHI-9kaYCgQ_Nq0",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "{{baseUrl}}/admin/users",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"admin",
+						"users"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1YTQzOTkxMWNmMmFiZGJlYzg4OGEyOCIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTcwNTI5MTk2OSwiZXhwIjoxNzA1Mjk1NTY5fQ.y1FQdbCNDSlESdzBHKgk4yIyEVncPHGN-62vSJLWMfQ",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/admin/users",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"admin",
+								"users"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "331"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"14b-QINkIl20hBhZirLD7Lm9tYtJ/mI\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 15 Jan 2024 04:51:17 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"_id\": \"65a439911cf2abdbec888a28\",\n        \"username\": \"abzthegamer\",\n        \"password\": \"password123\",\n        \"role\": \"admin\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"65a4b275c919f7238b788ff8\",\n        \"username\": \"abzthegamer1\",\n        \"password\": \"password123\",\n        \"role\": \"normal\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"65a4b4192ccc24ce8872bacd\",\n        \"username\": \"abzthegamer123\",\n        \"password\": \"password123\",\n        \"role\": \"normal\",\n        \"__v\": 0\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "create-group",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1YTRiMjc1YzkxOWY3MjM4Yjc4OGZmOCIsInJvbGUiOiJub3JtYWwiLCJpYXQiOjE3MDUyOTczNTcsImV4cCI6MTcwNTMwMDk1N30.-VKrwIvWd6_Vk9rdZyPxQhxiq1DsX-MSVicwJReKZ2g",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Awesome Group1\",\r\n    \"members\": [\"65a4b4192ccc24ce8872bacd\"]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/groups/create",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"groups",
+						"create"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "create-group",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1YTRiMjc1YzkxOWY3MjM4Yjc4OGZmOCIsInJvbGUiOiJub3JtYWwiLCJpYXQiOjE3MDUyOTczNTcsImV4cCI6MTcwNTMwMDk1N30.-VKrwIvWd6_Vk9rdZyPxQhxiq1DsX-MSVicwJReKZ2g",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Awesome Group\",\r\n    \"members\": [\"65a4b4192ccc24ce8872bacd\"]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/groups/create",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"groups",
+								"create"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "143"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"8f-JJdge8PoFFhxmUFlUI9QDgT/ebI\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 15 Jan 2024 05:54:12 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"name\": \"Awesome Group\",\n    \"members\": [\n        \"65a4b4192ccc24ce8872bacd\"\n    ],\n    \"createdBy\": \"65a4b275c919f7238b788ff8\",\n    \"_id\": \"65a4c883e2569b49859d3e67\",\n    \"__v\": 0\n}"
+				}
+			]
+		},
+		{
+			"name": "delete-group",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1YTRiMjc1YzkxOWY3MjM4Yjc4OGZmOCIsInJvbGUiOiJub3JtYWwiLCJpYXQiOjE3MDUyOTg0NDEsImV4cCI6MTcwNTMwMjA0MX0.P2lKi_S95DdsbZy8XF0z96oN3rNs-7Qk2FZpkZb7DbE",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "{{baseUrl}}/groups/65a4c993e2569b49859d3e71",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"groups",
+						"65a4c993e2569b49859d3e71"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "delete-group",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1YTRiMjc1YzkxOWY3MjM4Yjc4OGZmOCIsInJvbGUiOiJub3JtYWwiLCJpYXQiOjE3MDUyOTg1NjAsImV4cCI6MTcwNTMwMjE2MH0.89F7uFhmvoAFbBRhbxW7rDL4B6hcjtpDS4V379cdY6c",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/groups/65a4c993e2569b49859d3e71",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"groups",
+								"65a4c993e2569b49859d3e71"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "40"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"28-97ct/+2Dux54foli2DpZo/9R2+M\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 15 Jan 2024 06:07:25 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Group deleted successfully\"\n}"
+				}
+			]
+		},
+		{
+			"name": "get-all-groups",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1YTRiMjc1YzkxOWY3MjM4Yjc4OGZmOCIsInJvbGUiOiJub3JtYWwiLCJpYXQiOjE3MDUyOTczNTcsImV4cCI6MTcwNTMwMDk1N30.-VKrwIvWd6_Vk9rdZyPxQhxiq1DsX-MSVicwJReKZ2g",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "{{baseUrl}}/groups",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"groups"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "get-all-groups",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1YTRiMjc1YzkxOWY3MjM4Yjc4OGZmOCIsInJvbGUiOiJub3JtYWwiLCJpYXQiOjE3MDUyOTczNTcsImV4cCI6MTcwNTMwMDk1N30.-VKrwIvWd6_Vk9rdZyPxQhxiq1DsX-MSVicwJReKZ2g",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/groups",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"groups"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "145"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"91-HmUmgiCJ1KCBOM2f7ZwUHgI28KE\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 15 Jan 2024 05:55:23 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"_id\": \"65a4c883e2569b49859d3e67\",\n        \"name\": \"Awesome Group\",\n        \"members\": [\n            \"65a4b4192ccc24ce8872bacd\"\n        ],\n        \"createdBy\": \"65a4b275c919f7238b788ff8\",\n        \"__v\": 0\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "send-message-to-group",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1YTRiMjc1YzkxOWY3MjM4Yjc4OGZmOCIsInJvbGUiOiJub3JtYWwiLCJpYXQiOjE3MDUyOTg1NjAsImV4cCI6MTcwNTMwMjE2MH0.89F7uFhmvoAFbBRhbxW7rDL4B6hcjtpDS4V379cdY6c",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"content\": \"Hellooooooo\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/groups/:groupId/messages/send",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"groups",
+						":groupId",
+						"messages",
+						"send"
+					],
+					"variable": [
+						{
+							"key": "groupId",
+							"value": "65a4ce3ddca6929d725034c8"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "send-message-to-group",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1YTRiMjc1YzkxOWY3MjM4Yjc4OGZmOCIsInJvbGUiOiJub3JtYWwiLCJpYXQiOjE3MDUyOTg1NjAsImV4cCI6MTcwNTMwMjE2MH0.89F7uFhmvoAFbBRhbxW7rDL4B6hcjtpDS4V379cdY6c",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"content\": \"Hellooooooo\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/groups/:groupId/messages/send",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"groups",
+								":groupId",
+								"messages",
+								"send"
+							],
+							"variable": [
+								{
+									"key": "groupId",
+									"value": "65a4ce3ddca6929d725034c8"
+								}
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "148"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"94-v1i37mWr67v8P+6fTs/i9HDa38E\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 15 Jan 2024 06:33:08 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"group\": \"65a4ce3ddca6929d725034c8\",\n    \"sender\": \"65a4b275c919f7238b788ff8\",\n    \"content\": \"Hellooooooo\",\n    \"likes\": [],\n    \"_id\": \"65a4d1a47c6c62375fd71be3\",\n    \"__v\": 0\n}"
+				}
+			]
+		},
+		{
+			"name": "get-messages-of-a-group",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1YTRiMjc1YzkxOWY3MjM4Yjc4OGZmOCIsInJvbGUiOiJub3JtYWwiLCJpYXQiOjE3MDUyOTg1NjAsImV4cCI6MTcwNTMwMjE2MH0.89F7uFhmvoAFbBRhbxW7rDL4B6hcjtpDS4V379cdY6c",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "{{baseUrl}}/groups/:groupId/messages",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"groups",
+						":groupId",
+						"messages"
+					],
+					"variable": [
+						{
+							"key": "groupId",
+							"value": "65a4ce3ddca6929d725034c8"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "get-messages-of-a-group",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1YTRiMjc1YzkxOWY3MjM4Yjc4OGZmOCIsInJvbGUiOiJub3JtYWwiLCJpYXQiOjE3MDUyOTg1NjAsImV4cCI6MTcwNTMwMjE2MH0.89F7uFhmvoAFbBRhbxW7rDL4B6hcjtpDS4V379cdY6c",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/groups/:groupId/messages",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"groups",
+								":groupId",
+								"messages"
+							],
+							"variable": [
+								{
+									"key": "groupId",
+									"value": "65a4ce3ddca6929d725034c8"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "150"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"96-r/8vslHG9GUfp2Ks31YIo15FadI\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 15 Jan 2024 06:50:47 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"_id\": \"65a4d1a47c6c62375fd71be3\",\n        \"group\": \"65a4ce3ddca6929d725034c8\",\n        \"sender\": \"65a4b275c919f7238b788ff8\",\n        \"content\": \"Hellooooooo\",\n        \"likes\": [],\n        \"__v\": 0\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "like-group-message",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1YTQzOTkxMWNmMmFiZGJlYzg4OGEyOCIsInJvbGUiOiJhZG1pbiIsInVzZXIiOnsiX2lkIjoiNjVhNDM5OTExY2YyYWJkYmVjODg4YTI4IiwidXNlcm5hbWUiOiJhYnp0aGVnYW1lciIsInBhc3N3b3JkIjoicGFzc3dvcmQxMjMiLCJyb2xlIjoiYWRtaW4iLCJfX3YiOjB9LCJpYXQiOjE3MDUzMDMyNTcsImV4cCI6MTcwNTMwNjg1N30.qqzT7R27Q7gmPfZaLCSTuZl9j-wwJtt5VG7NuRz3h6A",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "{{baseUrl}}/groups/:groupId/messages/:messageId/like",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"groups",
+						":groupId",
+						"messages",
+						":messageId",
+						"like"
+					],
+					"variable": [
+						{
+							"key": "groupId",
+							"value": "65a4ce3ddca6929d725034c8"
+						},
+						{
+							"key": "messageId",
+							"value": "65a4d1a47c6c62375fd71be3"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "send-message-to-group",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1YTRiMjc1YzkxOWY3MjM4Yjc4OGZmOCIsInJvbGUiOiJub3JtYWwiLCJpYXQiOjE3MDUyOTg1NjAsImV4cCI6MTcwNTMwMjE2MH0.89F7uFhmvoAFbBRhbxW7rDL4B6hcjtpDS4V379cdY6c",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"content\": \"Hellooooooo\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/groups/:groupId/messages/send",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"groups",
+								":groupId",
+								"messages",
+								"send"
+							],
+							"variable": [
+								{
+									"key": "groupId",
+									"value": "65a4ce3ddca6929d725034c8"
+								}
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "148"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"94-v1i37mWr67v8P+6fTs/i9HDa38E\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 15 Jan 2024 06:33:08 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"group\": \"65a4ce3ddca6929d725034c8\",\n    \"sender\": \"65a4b275c919f7238b788ff8\",\n    \"content\": \"Hellooooooo\",\n    \"likes\": [],\n    \"_id\": \"65a4d1a47c6c62375fd71be3\",\n    \"__v\": 0\n}"
+				}
+			]
+		},
+		{
+			"name": "search group",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1YTQzOTkxMWNmMmFiZGJlYzg4OGEyOCIsInJvbGUiOiJhZG1pbiIsInVzZXIiOnsiX2lkIjoiNjVhNDM5OTExY2YyYWJkYmVjODg4YTI4IiwidXNlcm5hbWUiOiJhYnp0aGVnYW1lciIsInBhc3N3b3JkIjoicGFzc3dvcmQxMjMiLCJyb2xlIjoiYWRtaW4iLCJfX3YiOjB9LCJpYXQiOjE3MDUzMDMyNTcsImV4cCI6MTcwNTMwNjg1N30.qqzT7R27Q7gmPfZaLCSTuZl9j-wwJtt5VG7NuRz3h6A",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "{{baseUrl}}/groups/search?name=Awesome Group1",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"groups",
+						"search"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Awesome Group1"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "search group",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1YTQzOTkxMWNmMmFiZGJlYzg4OGEyOCIsInJvbGUiOiJhZG1pbiIsInVzZXIiOnsiX2lkIjoiNjVhNDM5OTExY2YyYWJkYmVjODg4YTI4IiwidXNlcm5hbWUiOiJhYnp0aGVnYW1lciIsInBhc3N3b3JkIjoicGFzc3dvcmQxMjMiLCJyb2xlIjoiYWRtaW4iLCJfX3YiOjB9LCJpYXQiOjE3MDUzMDMyNTcsImV4cCI6MTcwNTMwNjg1N30.qqzT7R27Q7gmPfZaLCSTuZl9j-wwJtt5VG7NuRz3h6A",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/groups/search?name=Awesome Group1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"groups",
+								"search"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "Awesome Group1"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "290"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"122-195CRXzH2cwsIaIKPM6Vp4Y0ORU\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 15 Jan 2024 07:21:18 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"_id\": \"65a4c883e2569b49859d3e67\",\n        \"name\": \"Awesome Group\",\n        \"members\": [\n            \"65a4b4192ccc24ce8872bacd\"\n        ],\n        \"createdBy\": \"65a4b275c919f7238b788ff8\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"65a4ce3ddca6929d725034c8\",\n        \"name\": \"Awesome Group1\",\n        \"members\": [\n            \"65a4b4192ccc24ce8872bacd\"\n        ],\n        \"createdBy\": \"65a4b275c919f7238b788ff8\",\n        \"__v\": 0\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "add-member-to-a-group",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1YTQzOTkxMWNmMmFiZGJlYzg4OGEyOCIsInJvbGUiOiJhZG1pbiIsInVzZXIiOnsiX2lkIjoiNjVhNDM5OTExY2YyYWJkYmVjODg4YTI4IiwidXNlcm5hbWUiOiJhYnp0aGVnYW1lciIsInBhc3N3b3JkIjoicGFzc3dvcmQxMjMiLCJyb2xlIjoiYWRtaW4iLCJfX3YiOjB9LCJpYXQiOjE3MDUzMDMyNTcsImV4cCI6MTcwNTMwNjg1N30.qqzT7R27Q7gmPfZaLCSTuZl9j-wwJtt5VG7NuRz3h6A",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"memberId\": \"65a439911cf2abdbec888a28\" \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/groups/:groupId/add-member",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"groups",
+						":groupId",
+						"add-member"
+					],
+					"variable": [
+						{
+							"key": "groupId",
+							"value": "65a4ce3ddca6929d725034c8"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "add-member-to-a-group",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1YTQzOTkxMWNmMmFiZGJlYzg4OGEyOCIsInJvbGUiOiJhZG1pbiIsInVzZXIiOnsiX2lkIjoiNjVhNDM5OTExY2YyYWJkYmVjODg4YTI4IiwidXNlcm5hbWUiOiJhYnp0aGVnYW1lciIsInBhc3N3b3JkIjoicGFzc3dvcmQxMjMiLCJyb2xlIjoiYWRtaW4iLCJfX3YiOjB9LCJpYXQiOjE3MDUzMDMyNTcsImV4cCI6MTcwNTMwNjg1N30.qqzT7R27Q7gmPfZaLCSTuZl9j-wwJtt5VG7NuRz3h6A",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"memberId\": \"65a439911cf2abdbec888a28\" \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/groups/:groupId/add-member",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"groups",
+								":groupId",
+								"add-member"
+							],
+							"variable": [
+								{
+									"key": "groupId",
+									"value": "65a4ce3ddca6929d725034c8"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "171"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"ab-OHomzh+MD0tdR5M38zM7JIPE0/g\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 15 Jan 2024 07:23:56 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"_id\": \"65a4ce3ddca6929d725034c8\",\n    \"name\": \"Awesome Group1\",\n    \"members\": [\n        \"65a4b4192ccc24ce8872bacd\",\n        \"65a439911cf2abdbec888a28\"\n    ],\n    \"createdBy\": \"65a4b275c919f7238b788ff8\",\n    \"__v\": 1\n}"
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "http://127.0.0.1:8080",
+			"type": "default"
+		}
+	]
+}
