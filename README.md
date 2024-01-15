@@ -10,13 +10,13 @@ Before you begin, ensure you have [Node.js](https://nodejs.org/) installed on yo
 
 1. **Clone the Repository**
 
-If you have git installed, you can clone the repository using: `git clone [repository URL]`
+  If you have git installed, you can clone the repository using: `git clone [repository URL]`
 
-Alternatively, you can download the repository as a zip file and extract it.
+  Alternatively, you can download the repository as a zip file and extract it.
 
 2. **Install Dependencies**
 
-Navigate to the project directory in your terminal and run the following command to install the necessary packages: `npm i`
+  Navigate to the project directory in your terminal and run the following command to install the necessary packages: `npm i`
 
 ## Running the Application
 
