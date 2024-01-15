@@ -25,3 +25,13 @@ To run the application locally:
 1. In your terminal, navigate to the project directory.
 
 2. Execute the following command: `npm run start`
+
+3. The application should now be running on your local server. You can access the APIs using postman (postman collection is also attached)
+
+## Running Tests
+
+The application comes with a set of pre-written test cases to ensure functionality:
+
+1. In your terminal or command prompt, make sure you're in the project's root directory.
+
+2. Run the test cases with the command: `npm run test`
