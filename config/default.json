@@ -1,0 +1,5 @@
+{
+  "port": 8080,
+  "db": "mongodb+srv://abzthegamer:N7TJhunKmaMqLvcf@cluster0.c4p08vk.mongodb.net/?retryWrites=true&w=majority",
+  "jwt_secret": "yada-yada-123kk-sdnksdbv9-skdjbk"
+}
